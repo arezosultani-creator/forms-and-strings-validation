@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweepstakes Entry Form</title>
+</head>
+<body>
+
+<h2>Sweepstakes Entry Form</h2>
+
+<form>
+    First Name:
+    <input type="text" name="fname"
+           required
+           pattern="[A-Za-z]{2,}">
+    <br><br>
+
+    Last Name:
+    <input type="text" name="lname"
+           required
+           pattern="[A-Za-z]{2,}">
+    <br><br>
+
+    Phone Number:
+    <input type="text" name="phone"
+           required
+           pattern="\d{3}-\d{3}-\d{4}">
+    <br><br>
+
+    Email Address:
+    <input type="text" name="email"
+           required
+           pattern="[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]+">
+    <br><br>
+
+    Lucky Number (1–100):
+    <input type="text" name="lucky"
+           required
+           pattern="([1-9][0-9]?|100)">
+    <br><br>
+
+    Date of Birth (m/d/yyyy):
+    <input type="text" name="dob"
+           required
+           pattern="(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/(19|20)\d\d">
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
